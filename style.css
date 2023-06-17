@@ -28,8 +28,12 @@
 }
 
 .btndiv{
-    margin-left:35%;
-}                
+    margin-left:30%;
+}   
+
+.btndivpython{
+    margin-left: 20%;
+}
 .coursecard{
      box-shadow: 0 0 3px rgb(44, 44, 104);
      transition: transform 1s;
