@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>E-Learning</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <div class="container-fluid">
+        <div class="logocontainer">
+          <a class="navbar-brand" href="index.html"
+            ><img src="./Images/logo-removebg-preview.png" class="w-100" alt=""
+          /></a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+              <a class="nav-link  fw-bold" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="About.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="Courses.html">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="Teachers.html">Teachers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="Contact.html">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-info" type="submit">Search</button>
+          </form>
+            <button class="btn btn-danger m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
+            <button class="btn btn-success m-2" data-bs-toggle="modal" data-bs-target="#exampleModal1">Register</button>
+
+      </div>
+    </nav>
+      <!-- Modal login -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title para" id="exampleModalLabel">Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  required>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1"  required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- Modal register -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title para" id="exampleModalLabel">Register</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Name</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="Name" required>
+            
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+            
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1"  required>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label"> Confirm Password</label>
+            <input type="Confirm password" class="form-control" id="exampleInputPassword1"  required>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form> 
+      </div>
+
+    </div>
+  </div>
+</div>
+
+ <!-- bgimg -->
+ <div class="topbg p-5 mb-4 mb-lg-0">
+  <div class="ms-lg-5 ps-lg-5">
+    <h1 class="fw-bold title">About Us</h1>
+    <div class="d-inline-flex align-item-center btns">
+      <a 
+        href="index.html"
+        class="text-light text-decoration-none  fs-4 fw-bolder p-2 ps-3"
+        ><i class="fa-solid fa-house fs-6"></i> Home </a
+      >
+      <a class="text-light text-decoration-none fs-4 fw-bolder p-2 pe-3"
+        >/ About Us</a
+      >
+    </div>
+  </div>
+</div>
+ 
+<!-- about us -->
+<div class="m-lg-5 p-lg-5 m-3 d-none d-lg-block">
+    <div class="mx-lg-5 px-lg-5">
+
+    <div class="row mx-lg-5 px-lg-5">
+        <div class="col-lg-6"><img src="./Images/about1.jpg" alt="" class="w-100 h-100 rounded-4"></div>
+        <div class="col-lg-6"><div class="m-lg-4 m-2"><h1 class="my-4">We Started e-learning..</h1><p class="para">In 1999, the phrase “E-Learning” was mentioned for the first time in a professional context by Elliott Masie during the TechLearn conference at Disneyworld. However, the very first attempts at e-learning can be traced back to 1924, when Ohio State University professor Sidney Pressey created the very first electronic learning machine, the Automatic Teacher.Perhaps the most significant invention in the history of online learning technology is the PLATO. The PLATO is a computer system designed by Donald L. Bitzer in 1960, and it was groundbreaking for its time. 
+        Two decades before the invention of the World Wide Web, the PLATO network could host thousands of users at its peak, and much of the greatest instructional software of the century across many educational disciplines was created on PLATO.  The PLATO terminals were very expensive at $5000-$7000 each, but they were worth every penny. 
+         </p></div>
+        </div>
+    </div>
+     
+   <div class="row mx-lg-5 px-lg-5">
+       
+        <div class="col-lg-6"><div class="m-lg-4 m-2"><h1 class="my-4"> Our Learning Processes..</h1><p class="para">In 1999, the phrase “E-Learning” was mentioned for the first time in a professional context by Elliott Masie during the TechLearn conference at Disneyworld. However, the very first attempts at e-learning can be traced back to 1924, when Ohio State University professor Sidney Pressey created the very first electronic learning machine, the Automatic Teacher.Perhaps the most significant invention in the history of online learning technology is the PLATO. The PLATO is a computer system designed by Donald L. Bitzer in 1960, and it was groundbreaking for its time. 
+        Two decades before the invention of the World Wide Web, the PLATO network could host thousands of users at its peak, and much of the greatest instructional software of the century across many educational disciplines was created on PLATO.  The PLATO terminals were very expensive at $5000-$7000 each, but they were worth every penny. 
+         </p></div>
+          </div>
+          <div class="col-lg-6"><img src="./Images/about2.jpg" alt="" class="w-100 h-100 rounded-4"></div>
+    </div>
+
+    <div class="row mx-lg-5 px-lg-5">
+        <div class="col-lg-6"><img src="./Images/about3.jpg" alt="" class="w-100 h-100 rounded-4"></div>
+        <div class="col-lg-6"><div class="m-lg-4 m-2"><h1 class="my-4">Our Learning Team..</h1><p class="para">In 1999, the phrase “E-Learning” was mentioned for the first time in a professional context by Elliott Masie during the TechLearn conference at Disneyworld. However, the very first attempts at e-learning can be traced back to 1924, when Ohio State University professor Sidney Pressey created the very first electronic learning machine, the Automatic Teacher.Perhaps the most significant invention in the history of online learning technology is the PLATO. The PLATO is a computer system designed by Donald L. Bitzer in 1960, and it was groundbreaking for its time. 
+        Two decades before the invention of the World Wide Web, the PLATO network could host thousands of users at its peak, and much of the greatest instructional software of the century across many educational disciplines was created on PLATO.  The PLATO terminals were very expensive at $5000-$7000 each, but they were worth every penny. 
+         </p></div>
+        </div>
+
+    </div>
+    
+    <div class="row mx-lg-5 px-lg-5">
+       
+        <div class="col-lg-6"><div class="m-lg-4 m-2"><h1 class="my-4">Our Services..</h1><p class="para">In 1999, the phrase “E-Learning” was mentioned for the first time in a professional context by Elliott Masie during the TechLearn conference at Disneyworld. However, the very first attempts at e-learning can be traced back to 1924, when Ohio State University professor Sidney Pressey created the very first electronic learning machine, the Automatic Teacher.Perhaps the most significant invention in the history of online learning technology is the PLATO. The PLATO is a computer system designed by Donald L. Bitzer in 1960, and it was groundbreaking for its time. 
+        Two decades before the invention of the World Wide Web, the PLATO network could host thousands of users at its peak, and much of the greatest instructional software of the century across many educational disciplines was created on PLATO.  The PLATO terminals were very expensive at $5000-$7000 each, but they were worth every penny. 
+         </p></div>
+          </div>
+          <div class="col-lg-6"><img src="./Images/about4.jpg" alt="" class="w-100"></div>
+    </div>
+
+    <div class="row mx-lg-5 px-lg-5">
+        <div class="col-lg-6"><img src="./Images/about5.jpg" alt="" class="w-100 h-100 rounded-4"></div>
+        <div class="col-lg-6"><div class="m-lg-4 m-2"><h1 class="my-4">Our Technology..</h1><p class="para">In 1999, the phrase “E-Learning” was mentioned for the first time in a professional context by Elliott Masie during the TechLearn conference at Disneyworld. However, the very first attempts at e-learning can be traced back to 1924, when Ohio State University professor Sidney Pressey created the very first electronic learning machine, the Automatic Teacher.Perhaps the most significant invention in the history of online learning technology is the PLATO. The PLATO is a computer system designed by Donald L. Bitzer in 1960, and it was groundbreaking for its time. 
+        Two decades before the invention of the World Wide Web, the PLATO network could host thousands of users at its peak, and much of the greatest instructional software of the century across many educational disciplines was created on PLATO.  The PLATO terminals were very expensive at $5000-$7000 each, but they were worth every penny. 
+         </p></div>
+        </div>
+    </div>
+     </div>
+</div>
+   
+<div class="m-lg-5 p-lg-5 m-3 d-lg-none d-block">
+    <div class="mx-lg-5 px-lg-5">
+
+   <div class="row mx-lg-5 px-lg-5">
+    <div class="col-lg-6"><img src="./Images/about2.jpg" alt="" class="w-100 h-100 rounded-4"></div>
+        <div class="col-lg-6"><div class="m-lg-4 m-2"><h1 class="my-4"> Our Learning Processes..</h1><p class="para">In 1999, the phrase “E-Learning” was mentioned for the first time in a professional context by Elliott Masie during the TechLearn conference at Disneyworld. However, the very first attempts at e-learning can be traced back to 1924, when Ohio State University professor Sidney Pressey created the very first electronic learning machine, the Automatic Teacher.Perhaps the most significant invention in the history of online learning technology is the PLATO. The PLATO is a computer system designed by Donald L. Bitzer in 1960, and it was groundbreaking for its time. 
+        Two decades before the invention of the World Wide Web, the PLATO network could host thousands of users at its peak, and much of the greatest instructional software of the century across many educational disciplines was created on PLATO.  The PLATO terminals were very expensive at $5000-$7000 each, but they were worth every penny. 
+         </p></div>
+          </div>
+    
+    </div>
+
+    <div class="row mx-lg-5 px-lg-5">
+        <div class="col-lg-6"><img src="./Images/about3.jpg" alt="" class="w-100 h-100 rounded-4"></div>
+        <div class="col-lg-6"><div class="m-lg-4 m-2"><h1 class="my-4">Our Learning Team..</h1><p class="para">In 1999, the phrase “E-Learning” was mentioned for the first time in a professional context by Elliott Masie during the TechLearn conference at Disneyworld. However, the very first attempts at e-learning can be traced back to 1924, when Ohio State University professor Sidney Pressey created the very first electronic learning machine, the Automatic Teacher.Perhaps the most significant invention in the history of online learning technology is the PLATO. The PLATO is a computer system designed by Donald L. Bitzer in 1960, and it was groundbreaking for its time. 
+        Two decades before the invention of the World Wide Web, the PLATO network could host thousands of users at its peak, and much of the greatest instructional software of the century across many educational disciplines was created on PLATO.  The PLATO terminals were very expensive at $5000-$7000 each, but they were worth every penny. 
+         </p></div>
+        </div>
+
+    </div>
+
+    <div class="row mx-lg-5 px-lg-5">
+        <div class="col-lg-6"><img src="./Images/about4.jpg" alt="" class="w-100 h-100 rounded-4"></div>
+        <div class="col-lg-6"><div class="m-lg-4 m-2"><h1 class="my-4">Our Services..</h1><p class="para">In 1999, the phrase “E-Learning” was mentioned for the first time in a professional context by Elliott Masie during the TechLearn conference at Disneyworld. However, the very first attempts at e-learning can be traced back to 1924, when Ohio State University professor Sidney Pressey created the very first electronic learning machine, the Automatic Teacher.Perhaps the most significant invention in the history of online learning technology is the PLATO. The PLATO is a computer system designed by Donald L. Bitzer in 1960, and it was groundbreaking for its time. 
+        Two decades before the invention of the World Wide Web, the PLATO network could host thousands of users at its peak, and much of the greatest instructional software of the century across many educational disciplines was created on PLATO.  The PLATO terminals were very expensive at $5000-$7000 each, but they were worth every penny. 
+         </p></div>
+          </div>
+         
+    </div>
+
+    <div class="row mx-lg-5 px-lg-5">
+        <div class="col-lg-6"><img src="./Images/about5.jpg" alt="" class="w-100 h-100 rounded-4"></div>
+        <div class="col-lg-6"><div class="m-lg-4 m-2"><h1 class="my-4">Our Technology..</h1><p class="para">In 1999, the phrase “E-Learning” was mentioned for the first time in a professional context by Elliott Masie during the TechLearn conference at Disneyworld. However, the very first attempts at e-learning can be traced back to 1924, when Ohio State University professor Sidney Pressey created the very first electronic learning machine, the Automatic Teacher.Perhaps the most significant invention in the history of online learning technology is the PLATO. The PLATO is a computer system designed by Donald L. Bitzer in 1960, and it was groundbreaking for its time. 
+        Two decades before the invention of the World Wide Web, the PLATO network could host thousands of users at its peak, and much of the greatest instructional software of the century across many educational disciplines was created on PLATO.  The PLATO terminals were very expensive at $5000-$7000 each, but they were worth every penny. 
+         </p></div>
+        </div>
+    </div>
+     </div>
+</div>
+
+<!-- footer -->
+    <div class="bg-dark ">
+        <footer class="py-3 ">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-light fw-bold">Home</a></li>
+            <li class="nav-item"><a href="About.html" class="nav-link px-2 text-light fw-bold">About</a></li>
+            <li class="nav-item"><a href="Courses.html" class="nav-link px-2 text-light fw-bold ">Courses</a></li>
+            <li class="nav-item"><a href="Teachers.html" class="nav-link px-2 text-light fw-bold ">Teachers</a></li>
+            <li class="nav-item"><a href="Contact.html" class="nav-link px-2 text-light fw-bold">Contact</a></li>
+          </ul>
+          <p class="text-center text-light fw-bold"> © 2023 Company,Upconn</p>
+        </footer>
+      </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

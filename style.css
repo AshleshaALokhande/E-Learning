@@ -1,0 +1,61 @@
+
+
+@media screen and (min-width: 900px) {
+    .logocontainer{
+        width:13%;
+    }
+}
+@media screen and (max-width: 900px) {
+    .logocontainer{
+        width:40%;
+    }
+}
+
+.para{
+    text-align: justify;
+}
+
+.coursecardImg{
+ border-bottom: 5px solid gray  ; 
+}
+.card-text{
+    text-align: justify;
+}
+
+.coursecard:hover{
+   background-color:rgb(229, 197, 137);
+   transform: scale(1.1);
+}
+
+.btndiv{
+    margin-left:35%;
+}                
+.coursecard{
+     box-shadow: 0 0 3px rgb(44, 44, 104);
+     transition: transform 1s;
+}
+
+.effect{
+    box-shadow:0 0 3px navy;
+    transition:all 1s ease;
+}
+
+.contactform{
+    background-color: rgb(146, 204, 238);
+    border: 0 0 3px solid black;
+}
+
+.locateus{
+    text-shadow: 0 0 2px black;
+   
+}
+
+.topbg{
+ background-image: url(/Images/bg4.webp);
+ background-size: cover;
+}
+ 
+.btns{
+    background-color:orange;
+    border-radius: 8px;
+}
